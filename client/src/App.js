@@ -14,10 +14,11 @@ function App() {
 
   return (
     <Router>
+      <div className="App-header">
+      <Header loggedIn={loggedIn} setLoggedIn={setLoggedIn} />
+      </div>
       <div className="App">
-        <Header loggedIn={loggedIn} setLoggedIn={setLoggedIn} />
         <PrivateRoute exact path="/" component={BubblePage} />
-
         <Route path="/login">
           <Login setLoggedIn={setLoggedIn} />
         </Route>

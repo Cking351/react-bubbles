@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Link, userHistory, useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 const Header = props => {
     const { loggedIn, setLoggedIn } = props;
@@ -8,7 +8,7 @@ const Header = props => {
     const { push } = useHistory()
 
     const handleLogOut = event => {
-        event.preventDeafult()
+        event.preventDefault()
         localStorage.removeItem('token')
         setLoggedIn(false)
         push("/")
