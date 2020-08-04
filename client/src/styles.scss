@@ -20,6 +20,20 @@ body,
   }
 }
 
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  a {
+    color:white;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+}
+
 .spacer {
   height: 100%;
 }
